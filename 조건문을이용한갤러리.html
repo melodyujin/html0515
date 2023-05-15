@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문을 이용한 갤러리</title>
+    //position말고 float으로 주기
+    <style>
+#wrapper{
+    width:600px;
+    height:500px;
+    background : yellow;
+    margin:auto;
+    position:relative;
+}
+#side{
+    width:50px;
+    height:500px;
+    background:red;
+    position:absolute;
+    left:0px;
+}
+#content{
+    width:550px;
+    height:450px;
+    background:blue;
+    position:absolute;
+    left:50px;
+    top:0px;
+
+}
+#footer{
+    width:550px;
+    height:50px;
+    background:green;
+    position:absolute;
+    left:50px;
+    top:450px;
+}
+a{
+    text-decoration:none;
+    font-size:30px;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="side">
+        </div>
+        <div id="content">
+        </div>
+        <div id="footer">
+            <a href="#" onClick="prev()">◀</a>
+            <a href="#" onClick="next()">▶</a>
+        </div>
+    </div>
+    
+</body>
+</html>
